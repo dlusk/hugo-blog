@@ -1,0 +1,142 @@
+/////////////////////////////////////////////////////
+// RULES LAYOUT:
+// 1) Box (margin, padding, display, etc)
+//
+// 2) Border & Background (border, border-radius, bg, etc)
+//
+// 3) Text (color, font-size, text-transform, etc)
+//
+// 4) Other stuff (transforms, animations, etc)
+//
+/////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////
+// General
+/////////////////////////////////////////////////////
+html {
+  box-sizing: border-box;
+
+  font-size: 100%;
+
+  @include breakpoint(sm) {
+    @include responsive-font(1, 1.1, $sm, $md);
+  }
+
+  @include breakpoint(md) {
+    @include responsive-font(1.1, 1.2, $md, $lg);
+  }
+
+  @include breakpoint(lg) {
+    @include responsive-font(1.2, 1.3, $md, $lg);
+  }
+
+  @include breakpoint(xl) {
+    font-size: 1.4rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+
+
+/////////////////////////////////////////////////////
+// Z-Indexes
+/////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////
+// Colors
+/////////////////////////////////////////////////////
+$dark-green:            #046a38;
+$dark-green-hover:      #03552d;
+$light-green:           #009639;
+$light-green-hover:     darken($light-green, 10%);
+$lightest-green:        #b0e77b;
+$lightest-green-hover:  #a1d46f;
+$grey:                  #b8babe;
+$dark-grey:             #404040;
+$black:                 #000;
+$white:                 #fff;
+$beige:                 #fbfaf4;
+$yellow:                #e1c118;
+
+
+
+/////////////////////////////////////////////////////
+// Typography
+/////////////////////////////////////////////////////
+$h-font: 'futura-pt', Helvetica, Arial, sans-serif;
+$p-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+body {
+  background-color: $white;
+
+  @include font($family: $p-font, $size: 1rem, $color: $dark-grey, $lh: 1.5);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  @include font($family: $h-font, $color: $white);
+}
+
+h1 {
+  @include font($size: 3rem, $lh: 1);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include font($family: $p-font, $size: 1.15rem, $lh: 1.25);
+}
+
+h3 {
+  @include font($size: 1.5rem, $lh: 1.33333);
+}
+
+h4 {
+  @include font($size: 1.25rem, $lh: 1.5);
+}
+
+h5 {
+  @include font($size: 1.25rem, $lh: 1.25);
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+
+
+/////////////////////////////////////////////////////
+// Links
+/////////////////////////////////////////////////////
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$a-tags} {
+  color: $light-green;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: $light-green-hover;
+}
