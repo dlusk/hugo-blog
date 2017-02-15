@@ -5,5 +5,9 @@
         '_base/config';
 
 // Layout
+@import '_layout/l-layout';
 
 // Components
+@import '_components/c-header',
+        '_components/c-entry-blurb',
+        '_components/c-entry';

@@ -61,61 +61,26 @@ img {
 /////////////////////////////////////////////////////
 // Colors
 /////////////////////////////////////////////////////
-$dark-green:            #046a38;
-$dark-green-hover:      #03552d;
-$light-green:           #009639;
-$light-green-hover:     darken($light-green, 10%);
-$lightest-green:        #b0e77b;
-$lightest-green-hover:  #a1d46f;
-$grey:                  #b8babe;
-$dark-grey:             #404040;
-$black:                 #000;
-$white:                 #fff;
-$beige:                 #fbfaf4;
-$yellow:                #e1c118;
+$white:  #fff;
+$dark-grey: #0C0C0C;
 
 
 
 /////////////////////////////////////////////////////
 // Typography
 /////////////////////////////////////////////////////
-$h-font: 'futura-pt', Helvetica, Arial, sans-serif;
-$p-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+$main-font: 'Lora', serif;
 
 body {
   background-color: $white;
 
-  @include font($family: $p-font, $size: 1rem, $color: $dark-grey, $lh: 1.5);
-}
-
-h1,
-h2,
-h3,
-h5 {
-  @include font($family: $h-font, $color: $white);
-}
-
-h1 {
-  @include font($size: 3rem, $lh: 1);
-  text-transform: uppercase;
+  @include font($family: $main-font, $color: $dark-grey);
 }
 
 h2 {
-  @include font($family: $p-font, $size: 1.15rem, $lh: 1.25);
+  @include font($weight: bold, $size: 3rem, $lh: 1.2);
 }
-
-h3 {
-  @include font($size: 1.5rem, $lh: 1.33333);
-}
-
-h4 {
-  @include font($size: 1.25rem, $lh: 1.5);
-}
-
-h5 {
-  @include font($size: 1.25rem, $lh: 1.25);
-}
-
 strong {
   font-weight: 600;
 }
@@ -134,9 +99,11 @@ $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
 #{$a-tags} {
-  color: $light-green;
+  color: $dark-grey;
+  border-bottom: 1px solid $dark-grey;
   text-decoration: none;
 }
 #{$a-tags-hover} {
-  color: $light-green-hover;
+  color: lighten($dark-grey, 20%);
+  border-bottom: 1px solid transparent;
 }

@@ -1,28 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ .Title }}</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="{{ .Description }}">
-  <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
-</head>
+{{ partial "head.html" .}}
+
 <body>
-  <main>
-    {{ range first 5 .Data.Pages }}
-    {{ if eq .Type "entries" }}
-      <article>
-        <h1>
+  <div class="l-content">
+    {{ partial "header.html" . }}
+    <main>
+      {{ range first 5 .Data.Pages }}
+      {{ if eq .Type "entries" }}
+        <article class="c-entry-blurb">
+          <h2 class="c-entry-blurb__title">
+            <a href="{{ .Permalink }}">
+                {{ .Title }}
+            </a>
+          </h1>
+          <div class="c-entry-blurb__date">
+            {{ .Date.Format "January 2, 2006" }}
+          </div>
+          {{ .Summary }}
           <a href="{{ .Permalink }}">
-              {{ .Title }}
+              Read more
           </a>
-        </h1>
-        {{ .Summary }}
-        <a href="{{ .Permalink }}">
-            Read the full article
-        </a>
-      </article>
-    {{ end }}
-    {{ end }}
-  </main>
+        </article>
+      {{ end }}
+      {{ end }}
+    </main>
+
+  </div>
 </body>
 <html>

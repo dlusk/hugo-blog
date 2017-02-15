@@ -1,0 +1,14 @@
+.c-entry-blurb {
+
+  &__title {
+
+    a {
+      border: 0;
+    }
+  }
+
+  &__date {
+    @include font($size: .6rem, $color: lighten($dark-grey, 35%));
+    margin-bottom: .8em;
+  }
+}

@@ -1,0 +1,16 @@
+.c-header {
+
+  &__text {
+    @include visually-hidden;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 25em;
+
+    a {
+      border: 0;
+    }
+  }
+}
