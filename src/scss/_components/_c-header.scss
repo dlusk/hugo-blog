@@ -12,5 +12,13 @@
     a {
       border: 0;
     }
+
+    svg path {
+      fill: #313131;
+
+      &:hover {
+        fill: #000;
+      }
+    }
   }
 }

@@ -62,7 +62,8 @@ img {
 // Colors
 /////////////////////////////////////////////////////
 $white:  #fff;
-$dark-grey: #0C0C0C;
+$dark-grey: #313131;
+$bg-color: #ffedde;
 
 
 
@@ -73,7 +74,7 @@ $dark-grey: #0C0C0C;
 $main-font: 'Lora', serif;
 
 body {
-  background-color: $white;
+  background-color: $bg-color;
 
   @include font($family: $main-font, $color: $dark-grey);
 }
