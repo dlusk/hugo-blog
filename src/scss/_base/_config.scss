@@ -76,7 +76,7 @@ $main-font: 'Lora', serif;
 body {
   background-color: $bg-color;
 
-  @include font($family: $main-font, $color: $dark-grey);
+  @include font($family: $main-font, $color: $dark-grey, $lh: 1.9);
 }
 
 h2 {

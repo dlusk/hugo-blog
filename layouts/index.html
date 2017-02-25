@@ -8,17 +8,13 @@
       {{ if eq .Type "entries" }}
         <article class="c-entry-blurb">
           <h2 class="c-entry-blurb__title">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
                 {{ .Title }}
             </a>
           </h1>
           <div class="c-entry-blurb__date">
             {{ .Date.Format "January 2, 2006" }}
           </div>
-          {{ .Summary }}
-          <a href="{{ .Permalink }}">
-              Read more
-          </a>
         </article>
       {{ end }}
       {{ end }}

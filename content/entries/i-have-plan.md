@@ -13,7 +13,7 @@ resources = []
 
 **I have plan.**
 
-Back to Arkansas, but let's start with Memphis. Memphis is the current domain of THE Griffin Smith. Patient Zero, one might say. In visiting a Griffin Smith, one can only spend so much time in a Griffin Smith's house before ze begins to _be_ a Griffin Smith in mind, body, and spirit (not a _bad_ thing, just a _different_ thing), and this is important for the visitor to know because, much like death by carbon monoxide poisoning, _becoming_ a Griffin Smith is a subtle but effective process. Signs of the transformation include:
+Back to Arkansas, but let's start with Memphis. Memphis is the current domain of THE Griffin Smith. Patient Zero, one might say. In visiting a Griffin Smith, one can only spend so much time in a Griffin Smith's house before ze begins to _be_ a Griffin Smith in mind, body, and spirit (not a _bad_ thing, just a _different_ thing), and this is important for the visitor to know because, much like death by carbon monoxide poisoning, becoming a Griffin Smith is a subtle but effective process. Signs of the transformation include:
 
 - Asking for just one bite or sip
 - Watching TVs that are on the ceiling with no issue whatsoever
